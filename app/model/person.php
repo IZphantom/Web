@@ -6,24 +6,25 @@ use base\model\Model;
 
 class Person extends Model
 {
-    public $Person_ID;
-    public $Name_ID;
-    public $Adress_ID;
+    public $Address_ID;
     public $Phone;
     public $Mail;
     public $DOB;
-    public $Gender;
+    public $First_name;
+    public $Last_name;
+    public $Patronimic_name;
 
 
-    public function __construct($Person_ID, $Name_ID, $Adress_ID, $Phone, $Mail, $DOB, $Gender)
+    public function __construct($Address_ID, $Phone, $Mail, $DOB, $First_name, $Last_name, $Patronimic_name)
     {
-        $this->Person_ID = $Person_ID;
-        $this->Name_ID = $Name_ID;
-        $this->Adress_ID = $Adress_ID;
+        $this->Address_ID = $Address_ID;
         $this->Phone = $Phone;
         $this->Mail = $Mail;
         $this->DOB = $DOB;
-        $this->Gender = $Gender;
+        $this->First_name = $First_name;
+        $this->Last_name = $Last_name;
+        $this->Patronimic_name = $Patronimic_name;
+        
 
 
 

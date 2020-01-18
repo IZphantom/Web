@@ -5,7 +5,7 @@ namespace app\database;
 use base\database\Database;
 use base\model\Table;
 
-class NameTable extends Table
+class LogsTable extends Table
 {
     public $tableName;
 
@@ -13,6 +13,10 @@ class NameTable extends Table
     {
         parent::__construct();
 
-        $this->tableName = 'Name';
+        $this->tableName = 'Logs';
+    }
+
+    public function getInsertId() {
+        return $this->database->getInsertId();
     }
 }
